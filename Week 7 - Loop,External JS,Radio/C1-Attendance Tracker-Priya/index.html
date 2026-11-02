@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Attendance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Attendance Tracker</h1>
+
+    <fieldset>
+      <legend>Select Class Section</legend>
+      <div class="options">
+        <label><input type="radio" name="section" value="A"> Section A</label>
+        <label><input type="radio" name="section" value="B"> Section B</label>
+        <label><input type="radio" name="section" value="C"> Section C</label>
+      </div>
+      <p id="sectionInfo">Selected Section: <span id="sectionDisplay">None</span></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Mark Attendance</legend>
+      <div class="options">
+        <label><input type="checkbox" class="student-checkbox" id="student1"> Aarav Kumar</label>
+        <label><input type="checkbox" class="student-checkbox" id="student2"> Bhavya Sharma</label>
+        <label><input type="checkbox" class="student-checkbox" id="student3"> Chinmay Patel</label>
+        <label><input type="checkbox" class="student-checkbox" id="student4"> Divya Nair</label>
+        <label><input type="checkbox" class="student-checkbox" id="student5"> Eshan Mehta</label>
+        <label><input type="checkbox" class="student-checkbox" id="student6"> Farida Begum</label>
+      </div>
+    </fieldset>
+
+    <div class="btn-wrap">
+      <button type="button" id="submitBtn">Calculate Attendance</button>
+    </div>
+
+    <fieldset>
+      <legend>Attendance Summary</legend>
+      <div class="summary">
+        <div class="card present"><p>Present</p><span id="presentCount">0</span></div>
+        <div class="card absent"><p>Absent</p><span id="absentCount">0</span></div>
+        <div class="card percent"><p>Attendance %</p><span id="attendancePercent">0%</span></div>
+      </div>
+    </fieldset>
+
+    <!-- Hidden selector required for test initialisation -->
+    <select id="sectionSelect" class="d-none">
+      <option value="None">None</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

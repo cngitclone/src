@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #111111;
+    background-color: #ffffff;
+  }
+  
+
+  #header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  
+  section {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 40px 20px;
+  }
+  
+  section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  #aboutSection {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    margin: 20px auto;
+  }
+  
+  #aboutSection p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #222222;
+  }
+  
+  
+  #speakersSection {
+    background-color: #e8f4f8;
+    padding: 40px 20px;
+    margin: 20px auto;
+  }
+  
+  #speakersList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 -10px;
+  }
+  
+  #speakersList li {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    font-size: 0.8rem;
+    color: #333333;
+    line-height: 1.4;
+    border-radius: 2px;
+  }
+  
+  
+  #agendaSection {
+    background-color: #fef9e7;
+    padding: 40px 20px;
+    margin: 20px auto;
+  }
+  
+  #agendaList {
+    list-style: none;
+    padding: 0;
+  }
+  #agendaList li {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #2c3e50;
+    font-size: 0.85rem;
+    color: #333333;
+    border-radius: 2px;
+  }
+  @media (max-width: 768px) {
+    #header h1 {
+      font-size: 1.5rem;
+    }
+    section {
+      max-width: 90%;
+    }
+    #speakersList li {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  }
+  @media (max-width: 480px) {
+    #header h1 {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 20px 15px;
+    }
+    section h2 {
+      font-size: 1.1rem;
+    }
+  }

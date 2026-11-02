@@ -1,0 +1,33 @@
+.image-container {
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+
+.layered-img {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: z-index 0.2s ease-in-out;
+}
+
+#img1 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#img2 {
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+#img3 {
+    top: 80px;
+    left: 80px;
+    z-index: 3;
+}

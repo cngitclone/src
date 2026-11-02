@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Quiz Evaluation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Quiz Evaluation System</h1>
+
+  <div class="container">
+    <div class="left-panel">
+      <label class="field-label" for="studentName">Student Name</label>
+      <input type="text" id="studentName" placeholder="Enter your name">
+
+      <fieldset>
+        <legend>Select Subject</legend>
+        <div class="options">
+          <label><input type="radio" name="subject" value="maths"> Maths</label>
+          <label><input type="radio" name="subject" value="science"> Science</label>
+          <label><input type="radio" name="subject" value="english"> English</label>
+        </div>
+        <p id="subjectInfo">Selected Subject: <span id="subjectDisplay">None</span></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Topics Covered</legend>
+        <div class="options">
+          <label><input type="checkbox" class="topic-checkbox" value="Algebra"> Algebra</label>
+          <label><input type="checkbox" class="topic-checkbox" value="Geometry"> Geometry</label>
+          <label><input type="checkbox" class="topic-checkbox" value="Biology"> Biology</label>
+          <label><input type="checkbox" class="topic-checkbox" value="Grammar"> Grammar</label>
+        </div>
+      </fieldset>
+
+      <div class="btn-row">
+        <button type="button" id="submitQuizBtn">Submit Quiz</button>
+        <button type="button" id="resetQuizBtn">Reset</button>
+      </div>
+
+      <fieldset>
+        <legend>Result</legend>
+        <div class="result-row"><span>Score</span><span id="quizScore">0</span></div>
+        <div class="result-row"><span>Grade</span><span id="quizGrade">-</span></div>
+        <div class="result-row"><span>Remark</span><span id="quizRemark">-</span></div>
+        <div class="result-row"><span>Topics</span><span id="topicList">-</span></div>
+      </fieldset>
+    </div>
+
+    <div class="right-panel">
+      <fieldset>
+        <legend>Question 1</legend>
+        <p class="question">What is 2 + 2?</p>
+        <div class="options">
+          <label><input type="radio" name="q1" value="a"> 4</label>
+          <label><input type="radio" name="q1" value="b"> 3</label>
+          <label><input type="radio" name="q1" value="c"> 5</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question 2</legend>
+        <p class="question">Which planet is closest to the Sun?</p>
+        <div class="options">
+          <label><input type="radio" name="q2" value="a"> Earth</label>
+          <label><input type="radio" name="q2" value="b"> Mercury</label>
+          <label><input type="radio" name="q2" value="c"> Mars</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question 3</legend>
+        <p class="question">How many vowels are in the English alphabet?</p>
+        <div class="options">
+          <label><input type="radio" name="q3" value="a"> 4</label>
+          <label><input type="radio" name="q3" value="b"> 6</label>
+          <label><input type="radio" name="q3" value="c"> 5</label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

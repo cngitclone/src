@@ -1,0 +1,30 @@
+/* Container must establish a positioning context for the absolute children */
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+}
+
+/* Images must be absolutely positioned so they visually overlap, as required */
+.layered-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Added for smoother aesthetics */
+}
+
+/* Initial z-index values based on requirements from Test 1 */
+#img1 {
+    z-index: 1;
+}
+
+#img2 {
+    z-index: 2;
+}
+
+#img3 {
+    z-index: 3;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Genre Poll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Genre Poll</h1>
+
+    <fieldset>
+      <legend>Select Your Age Group</legend>
+      <div class="options">
+        <label><input type="radio" name="ageGroup" value="teen"> Teen (13-17)</label>
+        <label><input type="radio" name="ageGroup" value="adult"> Adult (18-40)</label>
+        <label><input type="radio" name="ageGroup" value="senior"> Senior (40+)</label>
+      </div>
+      <p id="ageInfo">Selected Age Group: <span id="ageDisplay">None</span></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Choose Your Favourite Genres</legend>
+      <div class="options">
+        <label><input type="checkbox" class="genre-checkbox" id="genre1" value="Action"> Action</label>
+        <label><input type="checkbox" class="genre-checkbox" id="genre2" value="Comedy"> Comedy</label>
+        <label><input type="checkbox" class="genre-checkbox" id="genre3" value="Drama"> Drama</label>
+        <label><input type="checkbox" class="genre-checkbox" id="genre4" value="Thriller"> Thriller</label>
+        <label><input type="checkbox" class="genre-checkbox" id="genre5" value="Romance"> Romance</label>
+        <label><input type="checkbox" class="genre-checkbox" id="genre6" value="Sci-Fi"> Sci-Fi</label>
+      </div>
+    </fieldset>
+
+    <div class="btn-wrap">
+      <button type="button" id="pollSubmitBtn">Submit Poll</button>
+      <button type="button" id="pollResetBtn">Reset</button>
+    </div>
+
+    <fieldset>
+      <legend>Poll Results</legend>
+      <div class="summary">
+        <div class="card count"><p>Genres Selected</p><span id="genreCount">0</span></div>
+        <div class="card total"><p>Total Genres Available</p><span id="totalGenres">6</span></div>
+      </div>
+      <p class="result-label">Selected Genres:</p>
+      <p id="selectedGenres">None</p>
+    </fieldset>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

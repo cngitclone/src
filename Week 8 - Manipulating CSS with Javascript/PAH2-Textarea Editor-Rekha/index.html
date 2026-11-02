@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Textarea Editor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Live Textarea Editor</h2>
+        
+        <div class="row mb-3 align-items-end">
+            <!-- Font Size Control -->
+            <div class="col-md-4 mb-2">
+                <label for="fontSizeSelect" class="form-label">Font Size</label>
+                <select id="fontSizeSelect" class="form-select">
+                    <option value="12px" selected>12px</option>
+                    <option value="16px">16px</option>
+                    <option value="20px">20px</option>
+                </select>
+            </div>
+
+            <!-- Font Color Control -->
+            <div class="col-md-4 mb-2">
+                <label for="fontColorSelect" class="form-label">Font Color</label>
+                <select id="fontColorSelect" class="form-select">
+                    <option value="black" selected>Black</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+
+            <!-- Font Style Toggles -->
+            <div class="col-md-4 mb-2">
+                <div class="btn-group w-100" role="group" aria-label="Font Style Toggles">
+                    <button type="button" id="boldBtn" class="btn btn-outline-dark">Bold</button>
+                    <button type="button" id="italicBtn" class="btn btn-outline-dark">Italic</button>
+                    <button type="button" id="resetBtn" class="btn btn-outline-secondary">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Textarea Editor -->
+        <textarea id="editor" class="form-control" rows="10" placeholder="Type something here..."></textarea>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

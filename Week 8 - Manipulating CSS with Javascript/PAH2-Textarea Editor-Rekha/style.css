@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#editor {
+    /* Set default editor properties */
+    font-size: 12px;
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    resize: vertical;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-group .btn.active {
+    /* Optional visual styling to emphasize the active state */
+    background-color: #343a40;
+    color: white;
+}

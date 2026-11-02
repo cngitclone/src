@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Textarea Editor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="text-center mb-4 fw-bold">Live Textarea Editor</h2>
+
+    <div class="row mb-3 align-items-end">
+      <div class="col-md-4">
+        <label for="fontSizeSelect" class="form-label">Font Size</label>
+        <select id="fontSizeSelect" class="form-select">
+          <option value="12px" selected>12px</option>
+          <option value="16px">16px</option>
+          <option value="20px">20px</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="fontColorSelect" class="form-label">Font Color</label>
+        <select id="fontColorSelect" class="form-select">
+          <option value="black" selected>Black</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <div class="btn-group" role="group">
+          <button type="button" id="boldBtn" class="btn btn-outline-dark">Bold</button>
+          <button type="button" id="italicBtn" class="btn btn-outline-dark">Italic</button>
+          <button type="button" id="resetBtn" class="btn btn-outline-secondary">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <textarea id="editor" class="form-control" rows="8" placeholder="Type something here..."
+      style="font-size: 12px; color: black; font-weight: normal; font-style: normal;"></textarea>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const editor = document.getElementById('editor');
+      const fontSizeSelect = document.getElementById('fontSizeSelect');
+      const fontColorSelect = document.getElementById('fontColorSelect');
+      const boldBtn = document.getElementById('boldBtn');
+      const italicBtn = document.getElementById('italicBtn');
+      const resetBtn = document.getElementById('resetBtn');
+
+      fontSizeSelect.addEventListener('change', function () {
+        editor.style.fontSize = fontSizeSelect.value;
+      });
+
+      fontColorSelect.addEventListener('change', function () {
+        editor.style.color = fontColorSelect.value;
+      });
+
+      boldBtn.addEventListener('click', function () {
+        boldBtn.classList.toggle('active');
+        editor.style.fontWeight = boldBtn.classList.contains('active') ? 'bold' : 'normal';
+      });
+
+      italicBtn.addEventListener('click', function () {
+        italicBtn.classList.toggle('active');
+        editor.style.fontStyle = italicBtn.classList.contains('active') ? 'italic' : 'normal';
+      });
+
+      resetBtn.addEventListener('click', function () {
+        fontSizeSelect.value = '12px';
+        fontColorSelect.value = 'black';
+        boldBtn.classList.remove('active');
+        italicBtn.classList.remove('active');
+        editor.style.fontSize = '12px';
+        editor.style.color = 'black';
+        editor.style.fontWeight = 'normal';
+        editor.style.fontStyle = 'normal';
+      });
+    });
+  </script>
+</body>
+</html>

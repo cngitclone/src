@@ -1,0 +1,18 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+#sketchPad {
+    background-color: #ffffff;
+    border-bottom: 2px solid #757575;
+    border-right: 2px solid #757575;
+    cursor: crosshair;
+    display: block;
+}
+
+.content-wrapper {
+    text-align: center;
+}

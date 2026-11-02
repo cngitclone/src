@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      color: #2c3e50;
+      background-color: #ffffff;
+    }
+
+    .pageTitle {
+      text-align: center;
+      padding: 20px 0;
+      margin: 0;
+    }
+
+    #gallerySection {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+
+    .productDiv {
+      padding: 1rem;
+      margin: 0.75rem;
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .productImg {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      background-color: #ffffff;
+      display: block;
+    }
+
+    .productDescription {
+      margin-top: 12px;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 769px) {
+      .productDiv {
+        flex: 0 0 calc(50% - 1.5rem);
+        width: calc(50% - 1.5rem);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .productDiv {
+        flex: 0 0 calc(100% - 1.5rem);
+        width: calc(100% - 1.5rem);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="pageTitle">Product Gallery</h1>
+
+  <section id="gallerySection">
+
+    <div class="productDiv">
+      <img class="productImg" src="https://placehold.co/400x300?text=Headphones" alt="Premium Wireless Headphones" />
+      <p class="productDescription">Premium Wireless Headphones - Experience crystal-clear sound quality with noise cancellation technology.</p>
+    </div>
+
+    <div class="productDiv">
+      <img class="productImg" src="https://placehold.co/400x300?text=Smart+Watch" alt="Smart Watch" />
+      <p class="productDescription">Smart Watch - Track your fitness goals and stay connected with notifications on your wrist.</p>
+    </div>
+
+    <div class="productDiv">
+      <img class="productImg" src="https://placehold.co/400x300?text=Speaker" alt="Portable Speaker" />
+      <p class="productDescription">Portable Speaker - Take your music anywhere with this compact and powerful Bluetooth speaker.</p>
+    </div>
+
+    <div class="productDiv">
+      <img class="productImg" src="https://placehold.co/400x300?text=Backpack" alt="Laptop Backpack" />
+      <p class="productDescription">Laptop Backpack - Durable and stylish backpack designed to protect your laptop and accessories.</p>
+    </div>
+
+    <div class="productDiv">
+      <img class="productImg" src="https://placehold.co/400x300?text=Mouse" alt="Wireless Mouse" />
+      <p class="productDescription">Wireless Mouse - Ergonomic design with precision tracking for comfortable all-day use.</p>
+    </div>
+
+    <div class="productDiv">
+      <img class="productImg" src="https://placehold.co/400x300?text=USB-C+Hub" alt="USB-C Hub" />
+      <p class="productDescription">USB-C Hub - Expand your connectivity with multiple ports for all your devices.</p>
+    </div>
+
+  </section>
+
+</body>
+</html>
