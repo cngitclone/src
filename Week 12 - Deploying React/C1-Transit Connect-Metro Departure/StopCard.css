@@ -1,0 +1,23 @@
+.stop-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d232d;
+    border-left: 9px solid #ffb300;
+    padding: 22px 30px;
+  }
+  
+  .stop-card h2 {
+    margin: 0;
+    color: #e8edf3;
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 2px;
+  }
+  
+  .stop-card p {
+    margin: 0;
+    color: #64b5f6;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }

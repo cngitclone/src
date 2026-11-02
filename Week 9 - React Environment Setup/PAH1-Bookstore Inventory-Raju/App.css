@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1100px;
+  }
+  
+  h1 {
+    font-size: 22px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  .card {
+    font-size: 12px;
+  }
+  
+  .card-title {
+    font-size: 13px;
+  }
+  
+  .card-footer {
+    padding: 4px;
+  }
+  
+  .form-control {
+    font-size: 11px;
+  }
+  
+  .btn {
+    font-size: 11px;
+  }
+  
+  .badge {
+    font-size: 9px;
+  }
+  

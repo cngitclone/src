@@ -1,0 +1,15 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.task-completed {
+  background-color: #f0fff4;
+}
+
+.form-check-input {
+  cursor: pointer;
+}

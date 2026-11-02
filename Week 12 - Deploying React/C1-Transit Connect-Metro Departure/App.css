@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: #14181f;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.app-container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 30px 56px;
+  min-height: 100vh;
+  background-color: #14181f;
+}
+
+.app-header {
+  border-bottom: 3px double #ffb300;
+  padding-bottom: 20px;
+  margin-bottom: 36px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #ffb300;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.app-header h3 {
+  margin: 10px 0 0;
+  color: #7d8a99;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

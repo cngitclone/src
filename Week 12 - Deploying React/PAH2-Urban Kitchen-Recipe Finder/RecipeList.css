@@ -1,0 +1,27 @@
+.recipe-list {
+    list-style: none;
+    margin: 26px 0 0;
+    padding: 0;
+  }
+  
+  .recipe-item {
+    padding: 18px 15px;
+    border-bottom: 1px solid #e6efea;
+    color: #1f3b2e;
+    font-size: 21px;
+  }
+  
+  .recipe-item:last-child {
+    border-bottom: none;
+  }
+  
+  .recipe-item:hover {
+    background-color: #f4f9f6;
+  }
+  
+  .empty-message {
+    margin: 40px 0 15px;
+    text-align: center;
+    color: #7f9a8d;
+    font-size: 19px;
+  }

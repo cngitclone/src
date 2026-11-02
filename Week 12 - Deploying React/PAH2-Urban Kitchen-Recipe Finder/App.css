@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: #eef5f1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app-container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #1f4232;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.app-header h3 {
+  margin: 8px 0 0;
+  color: #5c8572;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.panel {
+  background-color: #ffffff;
+  border: 1px solid #d5e5dc;
+  border-radius: 12px;
+  padding: 30px;
+}

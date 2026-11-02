@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: #faf5ee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.app-header {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #2b2620;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.app-header h3 {
+  margin: 8px 0 0;
+  color: #85776a;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.board {
+  background-color: #ffffff;
+  border: 1px solid #e8dfd2;
+  border-radius: 12px;
+  padding: 30px;
+}
